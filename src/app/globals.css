@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-base:      #111218;
+  --bg-surface:   #181921;
+  --bg-card:      #1d1f2b;
+  --bg-row:       #21233100;
+  --bg-row-alt:   #1a1c2a;
+  --border:       #2e3147;
+  --border-light: #3a3d55;
+  --text-primary: #e8e6f0;
+  --text-muted:   #7a7d99;
+  --text-dim:     #5a5d78;
+  --accent:       #c8a84b;
+  --accent-dim:   #9c7e35;
+  --gold:         #ffd100;
+  --blue-link:    #78a8e8;
+  --green:        #56c96f;
+  --red:          #e06060;
+
+  /* Class colours */
+  --dk:      #C41E3A;
+  --druid:   #FF7C0A;
+  --hunter:  #AAD372;
+  --mage:    #3FC7EB;
+  --paladin: #F48CBA;
+  --priest:  #FFFFFF;
+  --rogue:   #FFF468;
+  --shaman:  #0070DD;
+  --warlock: #8788EE;
+  --warrior: #C69B3A;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.03em;
+}
+
+a { color: var(--blue-link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 3px; }
